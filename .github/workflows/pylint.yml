@@ -30,7 +30,7 @@ jobs:
 
     - name: commit
       run: |
-          git add time.txt
-          git commit -m "new date commit"
-          git push origin master
+          git add sample.py
+          git commit -m "new data"
+          git push origin
     
