@@ -28,9 +28,5 @@ jobs:
           git config user.name "arbazpivotchain"
           git config user.email "ansari.arbaz@pivotchain.com"
 
-    - name: commit
-      run: |
-          git add sample.py
-          git commit -m "new data"
-          git push origin
+    - 
     
