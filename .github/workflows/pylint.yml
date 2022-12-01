@@ -22,7 +22,7 @@ jobs:
       run: |
         echo "hello"
         ls .
-        autopep8 --in-place -a -a $(git ls-files '*.py')
+        autopep8 --in-place -a -a sample.py
     
     
     
