@@ -20,6 +20,6 @@ jobs:
         pip install black
     - name: Correcting the code with autopep8 
       run: |
-        black .github/workflows/sample.py
+        black .github/sample.py
     
     
