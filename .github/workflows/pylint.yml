@@ -23,6 +23,6 @@ jobs:
         black sample.py
     - uses: mikeal/publish-to-github-action@master
       env:
-        GITHUB_TOKEN: ${{"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"}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
     
