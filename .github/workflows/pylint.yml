@@ -20,9 +20,6 @@ jobs:
         pip install black
     - name: Correcting the code with autopep8 
       run: |
-        echo "hello"
-        ls .
-        black sample.py
-    
+        - uses: actions/checkout@v2
     
     
