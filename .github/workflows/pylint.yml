@@ -18,11 +18,11 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: ~/.cache/pip
-        key: ${{ hashFiles('setup.py') }}-${{ hashFiles('dev-requirements.txt') }}
+        key: ${{ hashFiles('setup.py') }}-${{ hashFiles('requirements.txt') }}
         
     - name: Install requirements
       run: |
-        pip install --upgrade --upgrade-strategy eager -r dev-requirements.txt -e .
+        pip install --upgrade --upgrade-strategy eager -r requirements.txt -e .
     
     - name: Correcting the code with black 
       run: |
@@ -31,8 +31,4 @@ jobs:
     - uses: mikeal/publish-to-github-action@master
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        BRANCH_NAME: 'main'
-        
-
-
-    
+        BRANCH_NAME: 'main'      
