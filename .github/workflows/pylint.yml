@@ -20,6 +20,7 @@ jobs:
         pip install autopep8
     - name: Correcting the code with autopep8 
       run: |
+        echo "hello"
         autopep8 --in-place -a -a $(git ls-files '*.py')
     
     
