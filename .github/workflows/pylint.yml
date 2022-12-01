@@ -20,6 +20,9 @@ jobs:
         pip install black
     - name: Correcting the code with autopep8 
       run: |
-        black .github/sample.py
-    
+        black sample.py
+    - uses: mikeal/publish-to-github-action@master
+      env:
+        GITHUB_TOKEN: ${{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}}
+
     
