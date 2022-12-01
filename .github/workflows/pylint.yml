@@ -21,8 +21,7 @@ jobs:
     - name: Correcting the code with autopep8 
       run: |
         echo "hello"
-        cd Desktop/forActions
-        ls forActions
+        ls .
         autopep8 --in-place -a -a $(git ls-files '*.py')
     
     
